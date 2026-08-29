@@ -1,17 +1,17 @@
-# BAT Price Prediction with Random Forest
+# Stock Price Prediction with Random Forest (e.g.TSLA used)
 
-This project builds a supervised machine learning pipeline to predict the Basic Attention Token (BAT) price in USD from historical OHLCV data using a Random Forest regression model
+This project builds a supervised machine learning pipeline to predict stock prices in USD from historical OHLCV data using a Random Forest regression model
 
 ## Overview
 
-- Downloads daily BAT–USD data from Yahoo Finance via `yfinance`
+- Downloads daily stock data from Yahoo Finance via `yfinance`
 - Cleans and structures the OHLCV time series with `pandas`
 - Trains a multi‑output `RandomForestRegressor` to predict the next‑step OHLC prices
 - Evaluates performance on a temporally ordered train/test split (80%/20%)
 
 ## Data
 
-- **Source**: Yahoo Finance `BAT-USD` ticker 
+- **Source**: Yahoo Finance `stock` ticker 
 - **Date range**: 2017‑09‑11 to 2024‑09‑20 
 - **Raw columns**: 
   - `Date`  
